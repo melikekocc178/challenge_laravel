@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 use App\Models\Art;
 use App\Models\Artist;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 
 class ArtistController extends Controller
 {
@@ -16,7 +15,7 @@ class ArtistController extends Controller
     public function index()
     {
         $artists =Artist::withCount('art')->paginate();
-        return view('artists.list', compact($artists));
+        return view('artists.list', compact('artists'));
 
     }
 
