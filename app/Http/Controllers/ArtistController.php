@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Art;
 use App\Models\Artist;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -49,7 +49,8 @@ class ArtistController extends Controller
      */
     public function show(Artist $artist)
     {
-        //
+        $artist->load('art');
+        return view('artists.view', compact('artist'));
     }
 
     /**

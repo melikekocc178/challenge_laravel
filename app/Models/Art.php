@@ -8,7 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Art extends Model
 {
     use HasFactory;
-    protected $fillable=['artist_id', 'title'];
+    protected $fillable=["artist_id", "title"];
+    protected $table='art';
 
     public function artist(){
         return $this->belongsTo(Artist::class);
