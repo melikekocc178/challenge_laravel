@@ -14,7 +14,6 @@ php artisan key:generate
 User::create(["name"=> "info","email"=>"info@gmail.com","password"=>bcrypt("123456"), "is_admin"=>"1"]);
 npm install && npm run
 php artisan serve
-
 ##description
 
 ##Fork and Clone
