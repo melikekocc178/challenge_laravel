@@ -15,7 +15,7 @@ User::create(["name"=> "info","email"=>"info@gmail.com","password"=>bcrypt("1234
 npm install && npm run
 php artisan serve
 ##description
-
+CRUD APPLİCATİON 
 ##Fork and Clone
 git clone https://github.com/<YOUR_USERNAME>/challenge-laravel.git
 
